@@ -1,0 +1,45 @@
+
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: lightgray;
+    }
+
+    #content {
+        /* justify-self: center; */
+        max-width: 900px;
+        margin: 0 auto;
+        border: 1px solid grey;
+        padding: 50px;
+    }
+
+    p {
+        color: #035f9c;
+        font-size: 1.3em; /* 130 bigger */
+    }
+    hr {
+        height: 3px;
+        background-color: #035f9c;
+    }
+
+    img {
+        width: 55%;
+        display: flex;
+        
+    }
+
+    h1, h2, p {
+        text-align: center;
+    }
+
+    #topics {
+        width: 55%;
+        margin: 0 auto;
+        line-height: 1.5em;
+    }
+
+    img {
+        display: block;
+        /* width: 55%; */
+        margin: 0 auto;
+    }
