@@ -40,3 +40,6 @@ if (true) {
     console.log(student) // local variable
 }
 
+
+
+
