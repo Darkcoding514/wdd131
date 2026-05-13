@@ -6,10 +6,14 @@ const menu = document.querySelector("nav");
 const btn = document.querySelector(".menu-btn");
 
 
-btn.addEventListener("click", toggleMenu);
+btn.addEventListener("click", toggleMenu); //event type, and function
 
 // could have done anonymous function also. which is function() {}, and you put code in brackets.
 // Not as effective though, because you couldn't call that elsewhere.
+//btn.addEventListener("click", function() {
+// menu.classList.toggle('hide');
+//btn.classList.toggle('change');
+//});
 
 
 function toggleMenu() {
