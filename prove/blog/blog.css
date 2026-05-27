@@ -1,0 +1,24 @@
+
+
+header {
+    padding-top: 15px;  
+}
+h1 {
+    justify-self: center;
+    color: rgb(54, 0, 54);
+    /* padding-top: 25px; */
+}
+hr {
+    border: 1px solid orange;
+    margin: 10px 0px;
+}
+
+nav {
+    justify-self: right;
+}
+a {
+    margin: 0px 10px;
+}
+div {
+    padding: 10px;
+}
