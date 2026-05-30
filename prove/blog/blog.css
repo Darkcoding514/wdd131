@@ -6,7 +6,6 @@ header {
 h1 {
     justify-self: center;
     color: rgb(54, 0, 54);
-    /* padding-top: 25px; */
 }
 h2 {
     color: rgb(194, 0, 0);
@@ -61,18 +60,23 @@ footer {
         border: 1px solid orange;
         margin: 0px 15px;
         display: block;
-        height: 300px;
+        height: auto;
         width: 0px;
     }
 
-    .middle-body {
+    .book {
         display: grid;
-        grid-template-columns: 0.6fr 15px 1fr;
+        grid-template-columns: 0.6fr 15px 0.8fr;
+        margin: 25px 0px 75px 0px;
+        /* margin: auto 0; */
     }
     img {
         margin: 0 100px;
     }
-
+    .book-display {
+    max-width: 80%;
+    
+    }
 
 
 }
