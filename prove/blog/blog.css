@@ -8,6 +8,10 @@ h1 {
     color: rgb(54, 0, 54);
     /* padding-top: 25px; */
 }
+h2 {
+    color: rgb(194, 0, 0);
+    font-size: 1.1em;
+}
 hr {
     border: 1px solid orange;
     margin: 10px 0px;
@@ -15,10 +19,60 @@ hr {
 
 nav {
     justify-self: right;
+    margin-right: 25px;
 }
 a {
     margin: 0px 10px;
+    color: rgb(194, 0, 0);
+    text-decoration: none;
 }
 div {
     padding: 10px;
+}
+
+.item-info {
+    display: block;
+    text-align: right;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+}
+.book {
+    
+    margin: 0px 50px 0px 15px;
+}
+footer {
+    text-align: center;
+}
+.vertical-hr {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+    #double-nav {
+        display: none;
+    }
+    .vertical-hr {
+        border: 1px solid orange;
+        margin: 0px 15px;
+        display: block;
+        height: 300px;
+        width: 0px;
+    }
+
+    .middle-body {
+        display: grid;
+        grid-template-columns: 0.6fr 15px 1fr;
+    }
+    img {
+        margin: 0 100px;
+    }
+
+
+
 }
