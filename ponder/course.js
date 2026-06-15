@@ -21,7 +21,7 @@
 const aCourse = {
     code: 'CSE121b',
     name: 'Javascript Language',
-    logo: 'images/js-logo.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
     sections: [
     { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
     { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A'}
@@ -85,4 +85,11 @@ document.querySelector("#courseName").textContent = aCourse.name;
 document.querySelector("#courseCode").textContent = aCourse.code;
 // document.querySelector("#sectionNumber").textContent = aCourse.code;
 // console.log(aCourse.sections[1].instructor)
+
+
+document.querySelector('img').setAttribute('src', aCourse.logo); //or document.querySelector('img').src = aCourse.logo;
+document.querySelector('img').setAttribute('alt', aCourse.name);
+document.querySelector('img').style.width = '100px';
+
+
 aCourse.enrollStudent();
