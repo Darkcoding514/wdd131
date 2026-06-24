@@ -9,22 +9,32 @@
 <body>
     
     <h1>WDD131 Portal Page</h1>
+    
     <h2>Ponders</h2>
-    <a target="none" href="ponder/meta-css.html">Week 1 - meta & css</a>
-    <a target="none" href="ponder/dom.html">Week 2 - DOM</a>
-    <a target="none" href="ponder/responsive.html">week 3 - Responsive</a>
-    <a target="none" href="ponder/modal.html">week 4 - Modal</a>
-    <a target="none" href="ponder/movies.html">week 5 - Movies</a>
-    <a target="none" href="ponder/form.html">week 7 - Form</a>
-    <a target="none" href="ponder/courses.html">week 8 - Courses</a>
-    <a target="none" href="ponder/flexbox.html">week 9 - Flexbox</a>
+    <div class="courses">
+        <a target="none" href="ponder/meta-css.html">Week 1 - meta & css</a>
+        <a target="none" href="ponder/dom.html">Week 2 - DOM</a>
+        <a target="none" href="ponder/responsive.html">week 3 - Responsive</a>
+        <a target="none" href="ponder/modal.html">week 4 - Modal</a>
+        <a target="none" href="ponder/movies.html">week 5 - Movies</a>
+        <a target="none" href="ponder/form.html">week 7 - Form</a>
+        <a target="none" href="ponder/courses.html">week 8 - Courses</a>
+        <a target="none" href="ponder/flexbox.html">week 9 - Flexbox</a>
+        <a target="none" href="ponder/hikes/hikes.html">week 10 - Hikes</a>
+    </div>
+    
     <h2>Proves</h2>
-    <a target="none" href="mission/index.html">Mission Statement</a>
-    <a target="none" href="prove/coolpics/index.html">Cool Pics 📷</a>
-    <a target="none" href="prove/blog/index.html">Blog Post</a>
-    <a target="none" href="prove/charactercard/index.html">Character Card</a>
+    <div class="courses">
+        <a target="none" href="mission/index.html">Mission Statement</a>
+        <a target="none" href="prove/coolpics/index.html">Cool Pics 📷</a>
+        <a target="none" href="prove/blog/index.html">Blog Post</a>
+        <a target="none" href="prove/charactercard/index.html">Character Card</a>
+    </div>
+
     <h2>Misc</h2>
-    <a target="none" href="challenges/startrek.html"> - Startrek</a>
+    <div class="courses">
+        <a target="none" href="challenges/startrek.html"> - Startrek</a>
+    </div>
 </body>
 </html>
 
@@ -33,7 +43,11 @@
 
 <style>
 
-
+    .courses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
     a {
         text-decoration: none;
         color: black;
@@ -43,4 +57,5 @@
         border-radius: 15% / 55%;
         /* min-width: ; */
         }
+    
 </style>
