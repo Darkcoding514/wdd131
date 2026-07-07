@@ -19,27 +19,43 @@ header {
 header img {
     height: 125px;
 }
-
 h1 {
   font-family: "AmaticSC", sans-serif;
   font-size: 4em;
+}
+
+#middlebody {
+    width: 75%;
+    justify-self: center;
 }
 
 button img{
     height: 30px;
     width: 30px;
 }
-
+button {
+    border: none;
+    /* margin-left: 10px; */
+}
+.vertical_hr {
+    width: 1px;
+    height: 25px;
+    margin: 2px 0px;
+    background-color: black;
+}
 input {
     height: 30px;
-    border: black solid 2px;
-    border-radius: 4%;
     width: 400px;
+    border: none;
 }
 #searchbar {
     display: flex;
     justify-content: center;
     margin: 20px 0px 0px 0px;
+    border: black solid 2px;
+    border-radius: 4%;
+    padding: 2px 2px;
+    align-items: center;
 }
 hr {
     margin: 15px 0px 15px 0px;
@@ -48,6 +64,8 @@ hr {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   margin: 20px 0px;
+   gap:5px;
 }
 .social a {
     width: 50px;
@@ -64,16 +82,102 @@ hr {
     justify-self: center;
     display: flex;
     flex-direction: column;
+    /* width: 90%; */
 }
 .recipe_review img {
-    width: 100px;
+    width: 100%;
 }
 .tag {    display: flex;    }
 h3 {
     border: gray solid 2px;
     padding: 4px;
     width: auto;
+    margin: 5px 0px;
+}
+h2 {
+    color: rgb(69 168 228);
+    margin: 30px 0px 0px 0px;
+}
+footer {
+    justify-self: center;
+}
+    #search_icon {
+        /* height: 40px; */
+        display: flex;
+        justify-content: right;
+        flex-grow: 1;
+    }
+
+
+
+
+@media screen and (min-width: 550px) {
+
+    /* Header css: */
+    header img {
+        height: 200px;}
+    h1 {
+    font-size: 6em;}
+
+
+    /* Middle Body */
+    #middlebody {width: 50%;}
+
+    /* Search css: */
+    #searchbar {
+        display: flex;
+        margin: 20px 0px 0px 0px;
+        border: black solid 2px;
+        border-radius: 4%;
+        padding: 2px 2px;
+    }
+    button img{
+        height: 30px;
+        width: 30px;}
+    button {
+        border: none;
+        justify-self: right;
+        align-items: right;
+    }
+    .vertical_hr {
+        width: 1px;
+        height: 25px;
+        margin: 2px 0px;
+    }
+    input {
+        height: 30px;
+        width: 400px;
+        border: none;
+    }
+    .recipe_review {
+    display: flex;
+    flex-direction: row;
+    /* min-width: 90%; */
+    gap: 20px;
+    flex-grow: 1;
+}
+.recipe_review img {    max-width: 45%;}
+h3 {    max-height: 20px;   }
+.recipe_info {
+    display: flex;
+  flex-direction: column; /* Stacks the tag, title, and stars vertically */
+  align-items: flex-start; /* Aligns all text neatly to the left edge */
+  gap: 8px;               /* Adds spacing between the tag, title, and stars */
+  flex-grow: 1;
+}
+#lowerbody {
+    display: flex;
+    /* justify-self: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+.social {
+    order: 1;
 }
 
+
+
+
+}
 
 
