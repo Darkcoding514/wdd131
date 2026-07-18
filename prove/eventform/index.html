@@ -6,6 +6,7 @@
     <title>Event Ticket Form</title>
     <script src="eventform.js" defer></script>
     <link rel="stylesheet" href="evenform.css">
+    <link rel="icon" href="/homeicon.ico">
 </head>
 <body>
     
@@ -24,23 +25,42 @@
 
             <div class="widefield">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="text" required />
+                <input id="email" name="email" type="email" required />
             </div>
+            
 
             <div class="field">
                 <label for="ticketType">Type</label>
                 <select id="ticketType" name="ticketType" aria-controls="notesContainer" required>
-                <option value="">Choose one</option>
-                <option value="discount">Student</option>
-                <option value="normal">Guest</option>
+                    <option value="">Choose one</option>
+                    <option value="discount">Student</option>
+                    <option value="normal">Guest</option>
                 </select>
             </div>
 
+            <div class="field">
+                <label for="availableDate">Event Date</label>
+                <input id="availableDate" name="availableDate" type="date" required />
+            </div>
+
+
+            <div id="idContainer" class="widefield">
+                <label for="id">Student I#</label>
+                <input id="id" name="id" type="text" />
+            </div>
+            <div id="codeContainer" class="widefield">
+                <label for="code">Access Code</label>
+                <input id="code" name="code" type="text" />
+            </div>
+
+            <button class="widefield" type="submit">Submit Preferences</button>
 
         </form>
+
+        <section id="output" aria-live="polite"></section>
     </div>
 
 
-
+    
 </body>
 </html>

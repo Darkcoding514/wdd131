@@ -6,7 +6,7 @@ body {
 }
 #eventbox {
     background-color: white;
-    height: 500px;
+    height: 500%;
     width: 600px;
     margin: 115px auto;
     border-radius: 5%;   
@@ -32,6 +32,7 @@ form {
 .widefield {
     margin: 15px 15px 0px 15px;
     grid-column: 1 / 3;
+    height: 30px;
 }
 input {
     height: 25px;
@@ -42,3 +43,31 @@ input {
 label {
     margin-bottom: 5px;
 }
+
+
+
+#ticketType {
+    height: 30px;
+}
+button {
+    height: 30px;
+    background-color: rgb(177, 198, 219);
+}
+
+#idContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+#codeContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+#output {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+
