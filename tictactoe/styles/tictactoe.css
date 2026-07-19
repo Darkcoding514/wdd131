@@ -1,0 +1,131 @@
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 90px 1fr 75px;
+    min-height: 100vh;
+}
+header {
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #afacac;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    background-color: lightblue;
+    padding: 15px 20px;
+    border-radius: 15%;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(184, 223, 237);
+}
+a {
+    color: black;
+}
+#icon {
+    height: 55px;
+}
+#headerdisplay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.5em;
+}
+footer {
+    grid-row: 3;
+    background-color: #afacac;
+    /* max-width: 20px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main {
+    grid-row: 2;
+    align-self: center;
+}
+#gameboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    height: 250px;
+    margin: 50px 50px 0px 50px;
+    gap: 20px;
+}
+.boardsquare {
+    background-color: lightcyan;
+    align-content: center;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2rem;
+    background-color: lightblue;
+    color: black;
+    border: none;
+}
+button:hover {
+    background-color: rgb(184, 223, 237);
+}
+
+#lowermain {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 30px 100px;
+    align-items: center;
+}
+#lowermain p {
+    font-size: 1.5em;
+}
+#resetbutton {
+    width: 10%;
+    height: 50%;
+    font-size: 1em;
+    padding: 8px 35px;
+    border-radius: 10%;
+}
+#resetbutton:hover {
+    background-color: rgb(184, 223, 237);
+}
+
+@media screen and (min-width:500px){
+    
+    header {
+    justify-content: space-evenly;
+    }
+
+    #gameboard {
+    height: 600px;
+    margin: 50px 400px 0px 400px;
+}
+
+#headerdisplay {
+    font-size: 1.2em;
+}
+
+#icon {
+    height: 80px;
+}
+
+#lowermain {
+    margin: 0px 400px 30px 400px;
+}
+
+button {
+    font-size: 5rem;
+
+}
+
+}
