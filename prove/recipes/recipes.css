@@ -74,17 +74,21 @@ hr {
 }
 
 .recipe_review {
-    border: black solid 2px;
-    border-radius: 3%;
-    padding: 20px;
-    /* width: 215px; */
-    /* margin: 0px 25px 0px 25px; */
+    
     justify-self: center;
     display: flex;
     flex-direction: column;
-    /* width: 90%; */
 }
-.recipe_review img {
+
+.recipe-card {
+    border: black solid 2px;
+    border-radius: 3%;
+    padding: 20px;
+    justify-self: center;
+    display: flex;
+    gap: 25px;
+}
+.recipe-card img {
     width: 100%;
 }
 .tag {    display: flex;    }
@@ -96,8 +100,9 @@ h3 {
 }
 h2 {
     color: rgb(69 168 228);
-    margin: 30px 0px 0px 0px;
+    /* margin: 30px 0px 0px 0px; */
 }
+p {margin: 5px 0px;}
 footer {
     justify-self: center;
 }
@@ -151,12 +156,12 @@ footer {
     }
     .recipe_review {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* min-width: 90%; */
     gap: 20px;
     flex-grow: 1;
 }
-.recipe_review img {    max-width: 45%;}
+.recipe-card img {    max-width: 55%;}
 h3 {    max-height: 20px;   }
 .recipe_info {
     display: flex;
